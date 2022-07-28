@@ -1,0 +1,155 @@
+div.gallery {
+  border: 1px solid #ccc;
+  display: flex;
+  width: 300px;
+  height: 150px;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+  box-shadow: 3px 3px 3px gray;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+div.round{
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  text-align: center;
+  border: 2px solid skyblue;
+  height: 70px;
+  box-shadow: 6px 6px 6px gray;
+}
+@media screen and (min-width: 1880px) {
+  .round {width: 100%; display: flex; position: relative;}
+  .gallery {width: 200px;}
+}
+div.round img{
+	border-radius: 20px;
+	height: 50px;
+}
+div.nav{
+	display: flex;
+  width: 1320px;
+
+}
+div.menu{
+height: 100px;
+margin-top: 20px;
+ color: black;
+ display: flex;
+}
+div.nava{
+  list-style-type: none;
+  margin: 0;
+  padding:0;
+  width: 90%;
+  overflow: hidden;
+  display: inline;
+  margin-left: 100px;
+}
+.nava a{
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+}
+a.sible{
+   border-bottom: 6px solid maroon;
+}
+.nava a:hover{
+  color: maroon;
+  border: 1px solid #fff;
+   border-bottom: 2px solid gray;
+}
+@media screen and (min-width: 480px) {
+  .menu {width: 100%; position: relative; }
+  .nava {width: 800px; position: relative;}
+}
+@media screen and (max-widh: 700px){
+  .menu{width: 200px;}
+}*/
+
+.ligne_horizontal { 
+display: flex; 
+flex-direction: row; 
+} 
+
+.ligne_horizontal:before, 
+.ligne_horizontal:after { 
+content: ""; 
+flex: 1 1; 
+border-bottom: 2px solid gray; 
+}
+
+.bare{
+          width: 50%;
+          height: 47px;
+          border: 3px;
+          box-shadow: 6px 6px 6px 6px gray;
+          font-size: 1.5rem;
+          border-radius: 50px;
+          transition: all 0.3s ease-in 0s;
+          margin-left: 30px;
+          display: flex;
+          position: relative;
+
+      }
+  div.bare input[type=search]{
+    border: none;
+    padding: 20px;
+    border-radius: 50px;
+      }
+      
+      /*.btn{
+          transition: all 0.3s ease-in 0s;
+          float: right;
+          margin: 5px;
+          font-size: 1.5rem;
+          border-radius: 1.5rem;
+      }
+      .btn:hover{
+          background-color: rgb(173, 173, 253);
+          border: 1px;
+          resize: none;
+      }*/
+  /*  .bare:active{
+        background-color: transparent !important;
+    }*/
+    div.rech{
+      margin: 20px;
+      display: flex;
+      padding-left: 10px;
+      padding: 10px 10px;
+    }
+
+    div.acot{
+      float: right;
+      margin-top: -90px;
+      display: flex;
+      margin-right: 20px;
+    }
+div.acot input {
+          width: 200px;
+          height: 40px;
+          border: 3px;
+          margin-right: 10px;
+          font-size: 1.5rem;
+          transition: all 0.3s ease-in 0s;
+}
+h6{
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 100%;
+}
+@media screen and (max-width: 580px) {
+  h6 {position: absolute;
+  width: 40%; }
+}
